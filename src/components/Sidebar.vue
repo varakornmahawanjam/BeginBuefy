@@ -1,6 +1,6 @@
 <template>
   <b-menu>
-    <b-menu-list label="Menu">
+    <b-menu-list label="Menu"><!--ในส่วนนี้จะเป็นหน้าdummyเพื่อให้แสดงในส่วนของapp-->
       <b-menu-item icon="account" label="My Account">
         <b-menu-item label="Account data"></b-menu-item>
         <b-menu-item label="Addresses"></b-menu-item>

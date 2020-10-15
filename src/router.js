@@ -10,14 +10,13 @@ import Pandemic from './components/BoardGame/Pandemic.vue'
 
 
 Vue.use(VueRouter);
-
 const routes = [
-  { path: "/", redirect: "/home" },
+  { path: "/", redirect: "/home" }, //เมื่อมีpathที่ชื่อ/เข้ามาจะทำการเปลี่ยนเป็นpath /home
   {
     name: "Cards",
-    path: "/home",
-    component: BoardGameList,
-  },
+    path: "/home",  //กำหนดpathที่จะเข้าไป
+    component: BoardGameList, //เมื่อมีpathที่ชื่อตรงตามด้านบนจะเปลี่ยนไปที่หน้าตามที่เราเก็บไว้ในที่นี้คือ BoardGameList ตามที่เราได้importไว้
+  }, //ซึ่งในไฟร์ที่routeทั้งหมดจะเป็นหน้าที่เขียนแบบhardcodeเพื่อไว้แสดงในการเชื่อมpath
   {
     path: "/carcassonne",
     name: "carcassonne",

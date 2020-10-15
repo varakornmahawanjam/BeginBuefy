@@ -1,11 +1,11 @@
 <template>
   <div>
     <div class="columns">
-      <router-link class="column is-4" to="carcassonne">
+      <router-link class="column is-4" to="carcassonne"> <!--กำหนดโดบการใช้router-link ส่วนpathจะกำหนดโดยใช้ to ในการส่งชื่อpath -->
         <div class="card">
           <div class="card-image">
             <figure class="image is-4by3">
-              <img src="../assets/carcassonne.jpg" />
+              <img src="../assets/carcassonne.jpg" /> <!--เรียกรูปภาพออกมาใช้-->
             </figure>
           </div>
           <div class="card-content">
@@ -148,11 +148,11 @@ export default {
   name: "BoardGameList",
   data() {
     return {
-      cards: {
+      cards: {//เก็บข้อมูลของboardgameไว้ในcardsเป็นobject
         carcassonne: {
-          name: "Carcassonne",
-          numberOfPlayers: "2-5",
-          durationOfPlay: "30-45",
+          name: "Carcassonne", //ชื่อเกม
+          numberOfPlayers: "2-5", //จำนวนคนที่เล่น
+          durationOfPlay: "30-45", //ระยะเวลาในการเล่น
         },
         catan: {
           name: "CATAN",
