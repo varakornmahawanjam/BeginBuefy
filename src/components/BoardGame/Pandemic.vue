@@ -3,7 +3,10 @@
     <div class="topic">
       <p class="is-size-2 has-text-weight-semibold">Pandemic (แพนเดมิค)</p>
     </div>
-    <img class="thisImage" src="../../assets/pandemic.jpg" />
+    <figure class="image">
+      <img class="image img" src="../../assets/pandemic.jpg" />
+    </figure>
+
     <div class="detail">
       <p class="is-size-5 has-text-weight-medium">จำนวนผู้เล่น : 2-4 คน</p>
       <p class="is-size-5 has-text-weight-medium">ระยะเวลาเล่น : 45-60 นาที</p>
@@ -44,7 +47,7 @@ export default {
 </script>
 
 <style>
-.thisImage {
+.image img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -58,6 +61,6 @@ export default {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 50%;
 }
 </style>

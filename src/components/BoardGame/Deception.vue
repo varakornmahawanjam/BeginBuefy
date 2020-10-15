@@ -5,7 +5,10 @@
         Deception : Murder in Hong Kong (ดีเซ็ปชั่น)
       </p>
     </div>
-    <img class="thisImage" src="../../assets/deception.jpg" />
+    <figure class="image">
+      <img class="image img" src="../../assets/deception.jpg" />
+    </figure>
+
     <div class="detail">
       <p class="is-size-5 has-text-weight-medium">จำนวนผู้เล่น : 4-12 คน</p>
       <p class="is-size-5 has-text-weight-medium">ระยะเวลาเล่น : 20-30 นาที</p>
@@ -50,7 +53,7 @@ export default {
 </script>
 
 <style>
-.thisImage {
+.image img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -64,6 +67,6 @@ export default {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 50%;
 }
 </style>
