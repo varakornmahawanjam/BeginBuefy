@@ -15,11 +15,6 @@
 <script>
 export default {
   name: "Sidebar",
-  data() {
-    return {
-      isActive: true,
-    };
-  },
 };
 </script>
 

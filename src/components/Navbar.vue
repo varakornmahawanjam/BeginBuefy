@@ -9,12 +9,12 @@
       </b-navbar-item>
     </template>
     <template slot="start">
-      <router-link to="home">
-        <b-navbar-item> Home </b-navbar-item>
-      </router-link>
-      <router-link to="buy"
-        ><b-navbar-item> Buy Boadgame </b-navbar-item>
-      </router-link>
+      <b-navbar-item tag="router-link" :to="{ path: '/home' }">
+        Home
+      </b-navbar-item>
+      <b-navbar-item tag="router-link" :to="{ path: '/buy' }">
+        Buy Boadgame
+      </b-navbar-item>
     </template>
 
     <template slot="end">
@@ -33,21 +33,6 @@
 <script>
 export default {
   name: "HelloWorld",
-  data() {
-    return {
-      show: false,
-    };
-  },
-  methods: {
-    click() {
-      console.log("Pass", this.show);
-      if (this.show === false) {
-        this.show = true;
-      } else {
-        this.show = false;
-      }
-    },
-  },
 };
 </script>
 <style>
